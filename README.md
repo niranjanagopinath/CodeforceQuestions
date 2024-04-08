@@ -1,1 +1,17 @@
 # CodeforceQuestions
+this is 1951A
+test=int(input())
+for i in range(test):
+    le=int(input())
+    k=list(input())
+    countr=k.count("1")
+    if countr%2!=0:
+        print("NO")
+    elif countr==2:
+         s=k.index("1")
+         if k[s+1]=="1":
+            print("NO")
+         else:
+             print("YES")
+    else:
+        print("YES")
